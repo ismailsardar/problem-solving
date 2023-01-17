@@ -219,4 +219,10 @@ function consonantCount(str) {
   // };
   // return count;
 }
-console.log(consonantCount('h^$&^#$&^elLo world'))
+// console.log(consonantCount('h^$&^#$&^elLo world'))
+
+// Problem = 20
+function rowSumOddNumbers(n) {
+	return n**3;
+}
+console.log(rowSumOddNumbers(42))

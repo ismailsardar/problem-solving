@@ -225,4 +225,12 @@ function consonantCount(str) {
 function rowSumOddNumbers(n) {
 	return n**3;
 }
-console.log(rowSumOddNumbers(42))
+// console.log(rowSumOddNumbers(42))
+
+// Problem = 21
+function angle(n) {
+  return n > 2 ? (n - 2) * 180: 0;
+  // if(n > 2){return (n - 2)*180};
+}
+// sum = (n - 2)180˚
+console.log(angle(3))

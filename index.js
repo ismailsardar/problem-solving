@@ -223,14 +223,28 @@ function consonantCount(str) {
 
 // Problem = 20
 function rowSumOddNumbers(n) {
-	return n**3;
+  return n ** 3;
 }
 // console.log(rowSumOddNumbers(42))
 
 // Problem = 21
 function angle(n) {
-  return n > 2 ? (n - 2) * 180: 0;
+  return n > 2 ? (n - 2) * 180 : 0;
   // if(n > 2){return (n - 2)*180};
 }
 // sum = (n - 2)180˚
-console.log(angle(3))
+// console.log(angle(3))
+
+// Problem = 21
+let number = function(busStops) {
+  let totalGet = 0;
+  let totalOff = 0;
+  for (let i = 0; i <= busStops.length -1; i++) {
+    totalGet += busStops[i][0];
+    totalOff += busStops[i][1];
+  }
+  return totalGet - totalOff;
+}
+// console.log(number([[10, 0], [3, 5], [5, 8]]))
+// console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]))
+console.log(number([[0,0]]))

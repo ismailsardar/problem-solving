@@ -250,4 +250,28 @@ let number = function(busStops) {
 
 // console.log(number([[10, 0], [3, 5], [5, 8]]))
 // console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]))
-console.log(number([[0,0]]))
+// console.log(number([[0,0]]))
+
+//problem = 22
+function trim(str, size) {
+  let strArray = str.split('');
+  // console.log(strArray)
+  let newStr = '';
+  if(strArray.length <= 3){
+    for(let i = 0; i < size; i++){
+      newStr+=strArray[i];
+    }
+  }
+  if(strArray.length <= size) return str;
+  if(strArray.length > size){
+    for(let i = 0; i < size-3; i++){
+      newStr+=strArray[i];
+    }
+  }
+  
+  // if(strArray.length <= size) return str;
+  return `${newStr}...`;
+}
+console.log(trim("Code Wars is pretty rad", 50))
+// console.log(trim("Creating kata is fun", 14))
+// console.log(trim("Ha", 1))

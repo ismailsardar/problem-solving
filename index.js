@@ -254,24 +254,25 @@ let number = function(busStops) {
 
 //problem = 22
 function trim(str, size) {
-  let strArray = str.split('');
-  // console.log(strArray)
-  let newStr = '';
-  if(strArray.length <= 3){
-    for(let i = 0; i < size; i++){
-      newStr+=strArray[i];
-    }
-  }
-  if(strArray.length <= size) return str;
-  if(strArray.length > size){
-    for(let i = 0; i < size-3; i++){
-      newStr+=strArray[i];
-    }
-  }
+  // let strArray = str.split('');
+  // // console.log(strArray)
+  // let newStr = '';
+  // if(strArray.length <= 3){
+  //   for(let i = 0; i < size; i++){
+  //     newStr+=strArray[i];
+  //   }
+  // }
+  // if(strArray.length <= size) return str;
+  // if(strArray.length > size){
+  //   for(let i = 0; i < size-3; i++){
+  //     newStr+=strArray[i];
+  //   }
+  // }
   
   // if(strArray.length <= size) return str;
-  return `${newStr}...`;
+  // return `${newStr}...`;
+  return str.length <= size ? str : str.slice(0,str.length > 3 ? size - 3: size) + '...'
 }
-console.log(trim("Code Wars is pretty rad", 50))
+// console.log(trim("Code Wars is pretty rad", 50))
 // console.log(trim("Creating kata is fun", 14))
-// console.log(trim("Ha", 1))
+console.log(trim("Ha", 1))

@@ -318,6 +318,9 @@ function powersOfTwo(n) {
 //problem = 25
 // console.log(Math.floor(5 / 3))
 function mango(quantity, price) {
-  return (quantity - Math.floor(quantity / 3)) * price;
+  // return (quantity - Math.floor(quantity / 3)) * price;
+  let c = quantity / 3;
+  const discount = Math.trunc(c) * price;
+  return quantity * price - discount;
 }
 console.log(mango(5, 3))

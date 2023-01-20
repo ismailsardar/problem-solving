@@ -305,10 +305,11 @@ function addingShifted (array, shift) {
 
 //problem = 24
 function powersOfTwo(n){
-  let result = [];
-  for(let i = 0; i <= n; i++){
-    result.push(Math.pow(2,i));
-  }
-  return result;
+   return Array.from({length: n + 1}, (v, k) => 2 ** k);
+  // let result = [];
+  // for(let i = 0; i <= n; i++){
+  //   result.push(Math.pow(2,i));
+  // }
+  // return result;
 }
 console.log(powersOfTwo(4))

@@ -284,8 +284,8 @@ function addingShifted (array, shift) {
     for(let j = 0; j < array[i].length; j++){
       let shiftInd = shift;
 
-shiftInd > 0? 
-  shiftInd == 0?newArray[j] += array[i][j]:
+// shiftInd > 0? 
+//   shiftInd == 0?newArray[j] += array[i][j]:
       if(shiftInd == 0){
         newArray[j] += array[i][j];
       }else if(shiftInd > 0){
@@ -301,4 +301,14 @@ shiftInd > 0?
   }
   return newArray;
 }
-console.log(addingShifted([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+// console.log(addingShifted([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+
+//problem = 24
+function powersOfTwo(n){
+  let result = [];
+  for(let i = 0; i <= n; i++){
+    result.push(Math.pow(2,i));
+  }
+  return result;
+}
+console.log(powersOfTwo(4))

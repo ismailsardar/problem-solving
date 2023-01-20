@@ -239,7 +239,7 @@ function angle(n) {
 let number = function(busStops) {
   let totalGet = 0;
   let totalOff = 0;
-  for (let i = 0; i <= busStops.length -1; i++) {
+  for (let i = 0; i <= busStops.length - 1; i++) {
     totalGet += busStops[i][0];
     totalOff += busStops[i][1];
   }
@@ -268,33 +268,33 @@ function trim(str, size) {
   //     newStr+=strArray[i];
   //   }
   // }
-  
+
   // if(strArray.length <= size) return str;
   // return `${newStr}...`;
-  return str.length <= size ? str : str.slice(0,str.length > 3 ? size - 3: size) + '...'
+  return str.length <= size ? str : str.slice(0, str.length > 3 ? size - 3 : size) + '...'
 }
 // console.log(trim("Code Wars is pretty rad", 50))
 // console.log(trim("Creating kata is fun", 14))
 // console.log(trim("Ha", 1))
 
 //problem = 23
-function addingShifted (array, shift) {
+function addingShifted(array, shift) {
   let newArray = [];
-  for(let i = 0; i < array.length; i++){
-    for(let j = 0; j < array[i].length; j++){
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
       let shiftInd = shift;
 
-// shiftInd > 0? 
-//   shiftInd == 0?newArray[j] += array[i][j]:
-      if(shiftInd == 0){
+      // shiftInd > 0? 
+      //   shiftInd == 0?newArray[j] += array[i][j]:
+      if (shiftInd == 0) {
         newArray[j] += array[i][j];
-      }else if(shiftInd > 0){
+      } else if (shiftInd > 0) {
         newArray.push()
         newArray[j] += array[i][j];
       }
-      if(newArray[j] === undefined){
+      if (newArray[j] === undefined) {
         newArray[j] = array[i][j];
-      }else{
+      } else {
         newArray[j] += array[i][j];
       }
     }
@@ -304,12 +304,20 @@ function addingShifted (array, shift) {
 // console.log(addingShifted([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 
 //problem = 24
-function powersOfTwo(n){
-   return Array.from({length: n + 1}, (v, k) => 2 ** k);
+function powersOfTwo(n) {
+  return Array.from({ length: n + 1 }, (v, k) => 2 ** k);
   // let result = [];
   // for(let i = 0; i <= n; i++){
   //   result.push(Math.pow(2,i));
   // }
   // return result;
 }
-console.log(powersOfTwo(4))
+// console.log(powersOfTwo(4))
+
+
+//problem = 25
+// console.log(Math.floor(5 / 3))
+function mango(quantity, price) {
+  return (quantity - Math.floor(quantity / 3)) * price;
+}
+console.log(mango(5, 3))

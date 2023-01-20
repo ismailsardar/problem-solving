@@ -275,4 +275,30 @@ function trim(str, size) {
 }
 // console.log(trim("Code Wars is pretty rad", 50))
 // console.log(trim("Creating kata is fun", 14))
-console.log(trim("Ha", 1))
+// console.log(trim("Ha", 1))
+
+//problem = 23
+function addingShifted (array, shift) {
+  let newArray = [];
+  for(let i = 0; i < array.length; i++){
+    for(let j = 0; j < array[i].length; j++){
+      let shiftInd = shift;
+
+shiftInd > 0? 
+  shiftInd == 0?newArray[j] += array[i][j]:
+      if(shiftInd == 0){
+        newArray[j] += array[i][j];
+      }else if(shiftInd > 0){
+        newArray.push()
+        newArray[j] += array[i][j];
+      }
+      if(newArray[j] === undefined){
+        newArray[j] = array[i][j];
+      }else{
+        newArray[j] += array[i][j];
+      }
+    }
+  }
+  return newArray;
+}
+console.log(addingShifted([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))

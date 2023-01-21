@@ -363,7 +363,8 @@ const quarterOf = (month) => {
 
 //problem = 29
 var isSquare = function(n){
-  return  Number.isInteger(Math.sqrt(n))? true: false; // fix me
+  return Math.sqrt(n) % 1 === 0;
+  // return  Number.isInteger(Math.sqrt(n))? true: false; // fix me
 }
 console.log(isSquare(4))
 // console.log(Number.isInteger(Math.sqrt(26)))

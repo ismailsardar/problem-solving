@@ -323,4 +323,14 @@ function mango(quantity, price) {
   const discount = Math.trunc(c) * price;
   return quantity * price - discount;
 }
-console.log(mango(5, 3))
+// console.log(mango(5, 3))
+
+//problem = 26
+function _if(bool, func1, func2) {
+  if(bool){
+    func1();
+  }else{
+    func2();
+  }
+}
+// The 'if' function

@@ -334,3 +334,9 @@ function _if(bool, func1, func2) {
   }
 }
 // The 'if' function
+
+//problem = 27
+function otherAngle(a, b) {
+  return a>0&&b>0? 180-(a+b): false;
+}
+console.log(otherAngle(-60,30))

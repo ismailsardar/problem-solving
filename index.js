@@ -327,9 +327,9 @@ function mango(quantity, price) {
 
 //problem = 26
 function _if(bool, func1, func2) {
-  if(bool){
+  if (bool) {
     func1();
-  }else{
+  } else {
     func2();
   }
 }
@@ -337,6 +337,23 @@ function _if(bool, func1, func2) {
 
 //problem = 27
 function otherAngle(a, b) {
-  return a>0&&b>0? 180-(a+b): false;
+  return a > 0 && b > 0 ? 180 - (a + b) : false;
 }
-console.log(otherAngle(-60,30))
+// console.log(otherAngle(-60,30))
+
+//problem = 28
+const quarterOf = (month) => {
+  if (month > 0 && month <= 3) {
+    return 1;
+  } else if (month >= 4 && month <= 6) {
+    return 2;
+  } else if (month >= 7 && month <= 9) {
+    return 3;
+  } else if (month >= 10 && month <= 12) {
+    return 4;
+  } else {
+    return 0;
+  }
+
+}
+console.log(quarterOf(11))

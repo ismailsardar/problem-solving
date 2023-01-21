@@ -359,4 +359,11 @@ const quarterOf = (month) => {
   // }
 
 }
-console.log(quarterOf(11))
+// console.log(quarterOf(11))
+
+//problem = 29
+var isSquare = function(n){
+  return  Number.isInteger(Math.sqrt(n))? true: false; // fix me
+}
+console.log(isSquare(4))
+// console.log(Number.isInteger(Math.sqrt(26)))

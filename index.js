@@ -379,4 +379,11 @@ function createArray(number){
   
   return newArray;
 }
-console.log(createArray(2))
+// console.log(createArray(2))
+
+//problem = 32
+function howManyLightsabersDoYouOwn(name) {
+  return name === "Zach" ? 18 : 0;
+}
+
+console.log(howManyLightsabersDoYouOwn('Zach'))

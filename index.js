@@ -394,4 +394,12 @@ function grow(x){
   // x.forEach(ele => {multe *= ele});
   // return multe; 
 }
-console.log(grow([1, 2, 3, 4]))
+// console.log(grow([1, 2, 3, 4]))
+
+
+//problem = 33
+function totalSubcuboids(x, y, z) {
+    return (x *(x + 1n) * y*(y + 1n) * z*(z + 1n))/8n;
+}
+console.log(totalSubcuboids(2n,2n,2n))
+// console.log(10^9)

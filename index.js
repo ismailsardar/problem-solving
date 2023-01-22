@@ -385,5 +385,12 @@ function createArray(number){
 function howManyLightsabersDoYouOwn(name) {
   return name === "Zach" ? 18 : 0;
 }
+// console.log(howManyLightsabersDoYouOwn('Zach'))
 
-console.log(howManyLightsabersDoYouOwn('Zach'))
+//problem = 33
+function grow(x){
+  let multe = 1;
+  x.forEach(ele => {multe *= ele});
+  return multe; 
+}
+console.log(grow([1, 2, 3, 4]))

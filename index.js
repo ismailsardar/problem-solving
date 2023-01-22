@@ -366,5 +366,17 @@ var isSquare = function(n){
   return Math.sqrt(n) % 1 === 0;
   // return  Number.isInteger(Math.sqrt(n))? true: false; // fix me
 }
-console.log(isSquare(4))
+// console.log(isSquare(4))
 // console.log(Number.isInteger(Math.sqrt(26)))
+
+//problem = 31
+function createArray(number){
+  var newArray = [];
+  
+  for(var counter = 1; counter <= number; counter++){
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}
+console.log(createArray(2))

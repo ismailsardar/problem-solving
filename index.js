@@ -389,8 +389,9 @@ function howManyLightsabersDoYouOwn(name) {
 
 //problem = 33
 function grow(x){
-  let multe = 1;
-  x.forEach(ele => {multe *= ele});
-  return multe; 
+  return x.reduce((a, b)=> a * b,1);
+  // let multe = 1;
+  // x.forEach(ele => {multe *= ele});
+  // return multe; 
 }
 console.log(grow([1, 2, 3, 4]))

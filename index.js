@@ -401,5 +401,16 @@ function grow(x){
 function totalSubcuboids(x, y, z) {
     return (x *(x + 1n) * y*(y + 1n) * z*(z + 1n))/8n;
 }
-console.log(totalSubcuboids(2n,2n,2n))
+// console.log(totalSubcuboids(2n,2n,2n))
 // console.log(10^9)
+
+//problem = 34
+function sumCubes(n){
+  return (n * (n + 1) / 2) ** 2;
+  // let sum = 0;
+  // for(let i = 1; i <= n; i++){
+  //   sum += Math.pow(i,3);
+  // }
+  // return sum;
+}
+console.log(sumCubes(2))

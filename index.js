@@ -413,4 +413,20 @@ function sumCubes(n){
   // }
   // return sum;
 }
-console.log(sumCubes(2))
+// console.log(sumCubes(2))
+
+//problem = 35
+function setReducer(input) {
+  let newArray = [];
+  let count = 1;
+  for(let i = 0; i < input.length-1; i++){
+    if(input[i] !== input[i+1] || !(input[i] !== input[i+1])){
+      newArray.push(count);
+    } else if(input[i] === input[i+1]){
+      count += 1;
+      newArray.push(count);
+    }
+  }
+  return newArray;
+}
+console.log(setReducer([1,1,1,2,1,2]))

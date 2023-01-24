@@ -429,4 +429,11 @@ function setReducer(input) {
   }
   return newArray;
 }
-console.log(setReducer([1,1,1,2,1,2]))
+// console.log(setReducer([1,1,1,2,1,2]))
+
+//problem = 36
+function solution(start, finish){
+  let distance = finish - start;
+  let jump = (distance/3) + (distance % 3)
+  return Math.floor(jump) ;
+}

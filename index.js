@@ -437,3 +437,9 @@ function solution(start, finish){
   let jump = (distance/3) + (distance % 3)
   return Math.floor(jump) ;
 }
+// console.log(solution(1,5))
+
+//problem = 37
+function booleanToString(b){
+
+}

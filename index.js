@@ -343,9 +343,9 @@ function otherAngle(a, b) {
 
 //problem = 28
 const quarterOf = (month) => {
-  
-  return Math.ceil(month/3)
-  
+
+  return Math.ceil(month / 3)
+
   // if (month > 0 && month <= 3) {
   //   return 1;
   // } else if (month >= 4 && month <= 6) {
@@ -362,7 +362,7 @@ const quarterOf = (month) => {
 // console.log(quarterOf(11))
 
 //problem = 29
-var isSquare = function(n){
+var isSquare = function(n) {
   return Math.sqrt(n) % 1 === 0;
   // return  Number.isInteger(Math.sqrt(n))? true: false; // fix me
 }
@@ -370,13 +370,13 @@ var isSquare = function(n){
 // console.log(Number.isInteger(Math.sqrt(26)))
 
 //problem = 31
-function createArray(number){
+function createArray(number) {
   var newArray = [];
-  
-  for(var counter = 1; counter <= number; counter++){
+
+  for (var counter = 1; counter <= number; counter++) {
     newArray.push(counter);
   }
-  
+
   return newArray;
 }
 // console.log(createArray(2))
@@ -388,8 +388,8 @@ function howManyLightsabersDoYouOwn(name) {
 // console.log(howManyLightsabersDoYouOwn('Zach'))
 
 //problem = 33
-function grow(x){
-  return x.reduce((a, b)=> a * b,1);
+function grow(x) {
+  return x.reduce((a, b) => a * b, 1);
   // let multe = 1;
   // x.forEach(ele => {multe *= ele});
   // return multe; 
@@ -399,13 +399,13 @@ function grow(x){
 
 //problem = 33
 function totalSubcuboids(x, y, z) {
-    return (x *(x + 1n) * y*(y + 1n) * z*(z + 1n))/8n;
+  return (x * (x + 1n) * y * (y + 1n) * z * (z + 1n)) / 8n;
 }
 // console.log(totalSubcuboids(2n,2n,2n))
 // console.log(10^9)
 
 //problem = 34
-function sumCubes(n){
+function sumCubes(n) {
   return (n * (n + 1) / 2) ** 2;
   // let sum = 0;
   // for(let i = 1; i <= n; i++){
@@ -419,10 +419,10 @@ function sumCubes(n){
 function setReducer(input) {
   let newArray = [];
   let count = 1;
-  for(let i = 0; i < input.length-1; i++){
-    if(input[i] !== input[i+1] || !(input[i] !== input[i+1])){
+  for (let i = 0; i < input.length - 1; i++) {
+    if (input[i] !== input[i + 1] || !(input[i] !== input[i + 1])) {
       newArray.push(count);
-    } else if(input[i] === input[i+1]){
+    } else if (input[i] === input[i + 1]) {
       count += 1;
       newArray.push(count);
     }
@@ -432,15 +432,16 @@ function setReducer(input) {
 // console.log(setReducer([1,1,1,2,1,2]))
 
 //problem = 36
-function solution(start, finish){
+function solution(start, finish) {
   let distance = finish - start;
-  let jump = (distance/3) + (distance % 3)
-  return Math.floor(jump) ;
+  let jump = (distance / 3) + (distance % 3)
+  return Math.floor(jump);
 }
 // console.log(solution(1,5))
 
 //problem = 37
-function booleanToString(b){
- return (typeof b) === "boolean"? b.toString() : false;
+function booleanToString(b) {
+  return b.toString();
+  // return (typeof b) === "boolean" ? b.toString() : false;
 }
-console.log( booleanToString(false))
+console.log(booleanToString(false))

@@ -441,5 +441,6 @@ function solution(start, finish){
 
 //problem = 37
 function booleanToString(b){
-
+ return (typeof b) === "boolean"? b.toString() : false;
 }
+console.log( booleanToString(false))

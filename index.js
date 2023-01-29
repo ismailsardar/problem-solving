@@ -444,4 +444,22 @@ function booleanToString(b) {
   return b.toString();
   // return (typeof b) === "boolean" ? b.toString() : false;
 }
-console.log(booleanToString(false))
+// console.log(booleanToString(false))
+
+//problem = 38
+// Collatz Conjecture (3n+1)
+var hotpo = function(n){
+  let count = 0;
+  while(n !== 1){
+    count++;
+    if(n%2===0){
+      n = n / 2;
+    }else{
+      n = 3 * n + 1;
+    }
+  }
+  return count;
+}
+// if(number is even) number = number / 2
+// if(number is odd) number = 3*number + 1
+console.log(hotpo(6))

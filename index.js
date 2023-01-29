@@ -448,17 +448,23 @@ function booleanToString(b) {
 
 //problem = 38
 // Collatz Conjecture (3n+1)
-var hotpo = function(n){
-  let count = 0;
-  while(n !== 1){
-    count++;
-    if(n%2===0){
-      n = n / 2;
-    }else{
-      n = 3 * n + 1;
-    }
+var hotpo = function(n,acc=0){
+   if (n <= 1) {
+    return acc;
+  } else {
+    return hotpo(n%2==0 ? n/2 : 3*n+1, acc+1);
   }
-  return count;
+  
+  // let count = 0;
+  // while(n !== 1){
+  //   count++;
+  //   if(n%2===0){
+  //     n = n / 2;
+  //   }else{
+  //     n = 3 * n + 1;
+  //   }
+  // }
+  // return count;
 }
 // if(number is even) number = number / 2
 // if(number is odd) number = 3*number + 1

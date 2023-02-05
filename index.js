@@ -590,4 +590,11 @@ function solution(str){
   // const reversesStr = str.split('').reverse().join('');
   // return reversesStr;
 }
-console.log(solution("str"))
+// console.log(solution("str"))
+
+//problem = 41
+// Function 2 - squaring an argument
+function square(num){
+  return Math.pow(num,2)
+}
+console.log(square(3))

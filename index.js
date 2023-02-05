@@ -584,7 +584,10 @@ let frute = [
 
 //problem = 40
 function solution(str){
-  const reversesStr = str.split('').reverse().join('');
-  return reversesStr;
+
+  return [...str].reverse().join('')
+  
+  // const reversesStr = str.split('').reverse().join('');
+  // return reversesStr;
 }
 console.log(solution("str"))

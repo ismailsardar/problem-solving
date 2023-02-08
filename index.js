@@ -597,4 +597,13 @@ function solution(str){
 function square(num){
   return Math.pow(num,2)
 }
-console.log(square(3))
+// console.log(square(3))
+
+//problem = 42
+// Geometry Basics: Distance between points in 2D
+function distanceBetweenPoints(a, b) {
+  return Math.hypot(a.x-b.x, a.y-b.y);
+  // The Math.hypot() static method returns the square root of the sum of squares of its arguments
+}
+console.log(distanceBetweenPoints({x:3,y:3},{x:3,y:3}))
+// Link = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot

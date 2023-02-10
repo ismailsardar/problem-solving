@@ -623,4 +623,12 @@ const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
 // console.log(Math.sqrt(9999))
 // console.log(Math.round(Math.sqrt(9999)))
 // console.log(sqr)
-console.log(nearestSq(10))
+// console.log(nearestSq(10))
+
+function nearestSq(n){
+    let num =  +Math.sqrt(n).toFixed();
+    return num * num;
+}
+
+const xxx = 34.643;
+console.log(xxx.toFixed())

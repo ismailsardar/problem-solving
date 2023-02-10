@@ -613,4 +613,14 @@ function mystery() {
   var results = {sanity: 'Hello'};
   return results;
 }
-console.log(mystery());
+// console.log(mystery());
+
+
+//problem = 44
+// Find Nearest square number
+const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
+// const sqr = Math.pow(Math.round(Math.sqrt(9999)),2)
+// console.log(Math.sqrt(9999))
+// console.log(Math.round(Math.sqrt(9999)))
+// console.log(sqr)
+console.log(nearestSq(10))

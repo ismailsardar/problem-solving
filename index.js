@@ -625,10 +625,34 @@ const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
 // console.log(sqr)
 // console.log(nearestSq(10))
 
-function nearestSq(n){
+function nearestSq1(n){
     let num =  +Math.sqrt(n).toFixed();
     return num * num;
 }
-
 const xxx = 34.643;
-console.log(xxx.toFixed())
+// console.log(xxx.toFixed())
+
+
+//problem = 45
+function solve(s){
+let sliseS = s.split('');
+let UpCount = 0;
+let LoCount = 0;
+let NuCount = 0;
+let SpCount = 0;
+sliseS.map((item)=>{
+   /^[A-Z]*$/.test(item) ? UpCount+=1 : UpCount;
+   /^[a-z]*$/.test(item) ? LoCount+=1 : LoCount;
+   /^[0-9]*$/.test(item) ? NuCount+=1 : NuCount;
+   /^[^a-zA-Z0-9]+$/.test(item) ? SpCount+=1 : SpCount;
+   // /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/.test(item) ? SpCount+=1 : SpCount;
+})
+  
+return [UpCount,LoCount,NuCount,SpCount];
+}
+// console.log(solve("@mw>0=QD-iAx!rp9TaG?o&M%l$34L.nbft"));
+// console.log(solve("RYT'>s&gO-.CM9AKeH?,5317tWGpS<*x2ukXZD"));
+// console.log(solve("P*K4%>mQUDaG$h=cx2?.Czt7!Zn16p@5H"));
+// console.log(solve("*'&ABCDabcde12345"));
+// console.log(solve("aAbBcC"));
+console.log(solve("51~KsWEji0gs|=o=g/FFdS:3`Vw0#.24\9U76ZA!d=CEnt0XDbFVG'2"));

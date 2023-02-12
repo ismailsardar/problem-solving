@@ -650,9 +650,13 @@ sliseS.map((item)=>{
   
 return [UpCount,LoCount,NuCount,SpCount];
 }
+
+function solve1(s) {
+  return [/[A-Z]/g, /[a-z]/g, /[0-9]/g, /[^A-Za-z0-9]/g].map(re => (s.match(re) || []).length);
+}
 // console.log(solve("@mw>0=QD-iAx!rp9TaG?o&M%l$34L.nbft"));
 // console.log(solve("RYT'>s&gO-.CM9AKeH?,5317tWGpS<*x2ukXZD"));
 // console.log(solve("P*K4%>mQUDaG$h=cx2?.Czt7!Zn16p@5H"));
 // console.log(solve("*'&ABCDabcde12345"));
 // console.log(solve("aAbBcC"));
-console.log(solve("51~KsWEji0gs|=o=g/FFdS:3`Vw0#.24\9U76ZA!d=CEnt0XDbFVG'2"));
+console.log(solve1("51~KsWEji0gs|=o=g/FFdS:3`Vw0#.24\9U76ZA!d=CEnt0XDbFVG'2"));

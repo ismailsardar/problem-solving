@@ -659,4 +659,21 @@ function solve1(s) {
 // console.log(solve("P*K4%>mQUDaG$h=cx2?.Czt7!Zn16p@5H"));
 // console.log(solve("*'&ABCDabcde12345"));
 // console.log(solve("aAbBcC"));
-console.log(solve1("51~KsWEji0gs|=o=g/FFdS:3`Vw0#.24\9U76ZA!d=CEnt0XDbFVG'2"));
+// console.log(solve1("51~KsWEji0gs|=o=g/FFdS:3`Vw0#.24\9U76ZA!d=CEnt0XDbFVG'2"));
+
+
+//problem = 46
+// Hamming Distance
+function hamming(a,b) {
+	let splictA =  a.split('');
+	let splictB =  b.split('');
+  let count = 0;
+  if(splictA.length == splictB.length){
+    for(let i=0; i<splictA.length;i++){
+      splictA[i] !== splictB[i] ? count+=1 : count;
+    }
+  }
+  return count;
+}
+console.log(hamming("Hello World","Hello World"));
+// console.log(hamming("I like turtles","I like turkeys"));

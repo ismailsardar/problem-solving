@@ -675,5 +675,10 @@ function hamming(a,b) {
   }
   return count;
 }
-console.log(hamming("Hello World","Hello World"));
+
+function hamming1(a,b) {
+  return a.split('').filter(function(v,i) {return a[i]!=b[i]}).length;
+}
+
+console.log(hamming1("Hello World","Hello World"));
 // console.log(hamming("I like turtles","I like turkeys"));

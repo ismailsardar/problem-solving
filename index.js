@@ -690,4 +690,14 @@ function isDivisible(n, x, y) {
   return !(n%x||n%y)
   // return n%x===0 && n%y===0 ? true : false; 
 }
-console.log(isDivisible(100,5,4))
+// console.log(isDivisible(100,5,4))
+
+//problem = 48
+// Grasshopper - Terminal Game #1
+function Hero (name) {
+  this.name = name || "Hero",
+  this.position = "00"
+  this.health = 100
+  this.damage = 5
+  this.experience = 0
+}

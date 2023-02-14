@@ -695,9 +695,12 @@ function isDivisible(n, x, y) {
 //problem = 48
 // Grasshopper - Terminal Game #1
 function Hero (name) {
-  this.name = name || "Hero",
-  this.position = "00"
-  this.health = 100
-  this.damage = 5
-  this.experience = 0
+
+  return {name: name, experience: 0, health: 100, position: `00`, damage: 5}
+  
+  // this.name = name || "Hero",
+  // this.position = "00"
+  // this.health = 100
+  // this.damage = 5
+  // this.experience = 0
 }

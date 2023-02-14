@@ -687,6 +687,7 @@ function hamming1(a,b) {
 //problem = 47
 // Is n divisible by x and y?
 function isDivisible(n, x, y) {
-  return n%x===0 && n%y===0 ? true : false; 
+  return !(n%x||n%y)
+  // return n%x===0 && n%y===0 ? true : false; 
 }
-console.log(isDivisible(100,5,3))
+console.log(isDivisible(100,5,4))

@@ -704,3 +704,10 @@ function Hero (name) {
   // this.damage = 5
   // this.experience = 0
 }
+
+//problem = 49
+// Century From Year
+function century(year) {
+  return Math.floor(year/100);
+}
+console.log(century(2000))

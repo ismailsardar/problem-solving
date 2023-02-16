@@ -710,4 +710,15 @@ function Hero (name) {
 function century(year) {
   return Math.floor(year/100);
 }
-console.log(century(2000))
+// console.log(century(2000))
+
+// problem = 50
+// Square(n) Sum
+function squareSum(numbers){
+  let sum = 0;
+  for(let i=0; i<numbers.length;i++){
+    sum+=Math.pow(numbers[i],2);
+  }
+  return sum;
+}
+console.log(squareSum([1,2,2]))

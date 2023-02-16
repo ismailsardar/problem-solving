@@ -722,4 +722,23 @@ function squareSum(numbers){
   // }
   // return sum;
 }
-console.log(squareSum([1,2,2]))
+// console.log(squareSum([1,2,2]))
+
+//problem = 51
+// Fun with ES6 Classes #1 - People, people, people
+class Person {
+  constructor(firstName='John',lastName='Doe',age=0,gender='Male'){
+    this.firstName = firstName,
+    this.lastName = lastName,
+    this.age = age,
+    this.gender = gender
+  }
+
+  sayFullName(){
+    return this.firstName + ' ' + this.lastName;
+  }
+
+  static greetExtraTerrestrials(raceName){
+    return `Welcome to Planet Earth ${raceName}`
+  }
+}

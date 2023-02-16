@@ -715,10 +715,11 @@ function century(year) {
 // problem = 50
 // Square(n) Sum
 function squareSum(numbers){
-  let sum = 0;
-  for(let i=0; i<numbers.length;i++){
-    sum+=Math.pow(numbers[i],2);
-  }
-  return sum;
+  return numbers.reduce((sum,num) => sum + (num * num), 0);
+  // let sum = 0;
+  // for(let i=0; i<numbers.length;i++){
+  //   sum+=Math.pow(numbers[i],2);
+  // }
+  // return sum;
 }
 console.log(squareSum([1,2,2]))

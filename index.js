@@ -448,13 +448,13 @@ function booleanToString(b) {
 
 //problem = 38
 // Collatz Conjecture (3n+1)
-var hotpo = function(n,acc=0){
-   if (n <= 1) {
+var hotpo = function(n, acc = 0) {
+  if (n <= 1) {
     return acc;
   } else {
-    return hotpo(n%2==0 ? n/2 : 3*n+1, acc+1);
+    return hotpo(n % 2 == 0 ? n / 2 : 3 * n + 1, acc + 1);
   }
-  
+
   // let count = 0;
   // while(n !== 1){
   //   count++;
@@ -471,28 +471,28 @@ var hotpo = function(n,acc=0){
 // console.log(hotpo(6))
 
 //problem = 39
-function SubtractSum(n){
+function SubtractSum(n) {
   let sum = 0;
   let numStr = n.toString().split('');
-  let numArr = numStr.map(num=> sum+=Number(num));
+  let numArr = numStr.map(num => sum += Number(num));
   // let 
-  return n-sum;
+  return n - sum;
 }
 // console.log(SubtractSum(12))
 let frute = [
- "kiwi",
-"pear",
-"kiwi",
-"banana",
-"melon",
-"banana",
-"melon",
-"pineapple",
-"apple",
-"pineapple",
-"cucumber",
-"pineapple",
-"cucumber",]
+  "kiwi",
+  "pear",
+  "kiwi",
+  "banana",
+  "melon",
+  "banana",
+  "melon",
+  "pineapple",
+  "apple",
+  "pineapple",
+  "cucumber",
+  "pineapple",
+  "cucumber",]
 // "orange",
 // 15-grape
 // 16-orange
@@ -583,10 +583,10 @@ let frute = [
 // ]
 
 //problem = 40
-function solution(str){
+function solution(str) {
 
   return [...str].reverse().join('')
-  
+
   // const reversesStr = str.split('').reverse().join('');
   // return reversesStr;
 }
@@ -594,15 +594,15 @@ function solution(str){
 
 //problem = 41
 // Function 2 - squaring an argument
-function square(num){
-  return Math.pow(num,2)
+function square(num) {
+  return Math.pow(num, 2)
 }
 // console.log(square(3))
 
 //problem = 42
 // Geometry Basics: Distance between points in 2D
 function distanceBetweenPoints(a, b) {
-  return Math.hypot(a.x-b.x, a.y-b.y);
+  return Math.hypot(a.x - b.x, a.y - b.y);
   // The Math.hypot() static method returns the square root of the sum of squares of its arguments
 }
 // console.log(distanceBetweenPoints({x:3,y:3},{x:3,y:3}))
@@ -610,7 +610,7 @@ function distanceBetweenPoints(a, b) {
 
 //problem = 43
 function mystery() {
-  var results = {sanity: 'Hello'};
+  var results = { sanity: 'Hello' };
   return results;
 }
 // console.log(mystery());
@@ -625,30 +625,30 @@ const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
 // console.log(sqr)
 // console.log(nearestSq(10))
 
-function nearestSq1(n){
-    let num =  +Math.sqrt(n).toFixed();
-    return num * num;
+function nearestSq1(n) {
+  let num = +Math.sqrt(n).toFixed();
+  return num * num;
 }
 const xxx = 34.643;
 // console.log(xxx.toFixed())
 
 
 //problem = 45
-function solve(s){
-let sliseS = s.split('');
-let UpCount = 0;
-let LoCount = 0;
-let NuCount = 0;
-let SpCount = 0;
-sliseS.map((item)=>{
-   /^[A-Z]*$/.test(item) ? UpCount+=1 : UpCount;
-   /^[a-z]*$/.test(item) ? LoCount+=1 : LoCount;
-   /^[0-9]*$/.test(item) ? NuCount+=1 : NuCount;
-   /^[^a-zA-Z0-9]+$/.test(item) ? SpCount+=1 : SpCount;
-   // /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/.test(item) ? SpCount+=1 : SpCount;
-})
-  
-return [UpCount,LoCount,NuCount,SpCount];
+function solve(s) {
+  let sliseS = s.split('');
+  let UpCount = 0;
+  let LoCount = 0;
+  let NuCount = 0;
+  let SpCount = 0;
+  sliseS.map((item) => {
+    /^[A-Z]*$/.test(item) ? UpCount += 1 : UpCount;
+    /^[a-z]*$/.test(item) ? LoCount += 1 : LoCount;
+    /^[0-9]*$/.test(item) ? NuCount += 1 : NuCount;
+    /^[^a-zA-Z0-9]+$/.test(item) ? SpCount += 1 : SpCount;
+    // /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/.test(item) ? SpCount+=1 : SpCount;
+  })
+
+  return [UpCount, LoCount, NuCount, SpCount];
 }
 
 function solve1(s) {
@@ -664,20 +664,20 @@ function solve1(s) {
 
 //problem = 46
 // Hamming Distance
-function hamming(a,b) {
-	let splictA =  a.split('');
-	let splictB =  b.split('');
+function hamming(a, b) {
+  let splictA = a.split('');
+  let splictB = b.split('');
   let count = 0;
-  if(splictA.length == splictB.length){
-    for(let i=0; i<splictA.length;i++){
-      splictA[i] !== splictB[i] ? count+=1 : count;
+  if (splictA.length == splictB.length) {
+    for (let i = 0; i < splictA.length; i++) {
+      splictA[i] !== splictB[i] ? count += 1 : count;
     }
   }
   return count;
 }
 
-function hamming1(a,b) {
-  return a.split('').filter(function(v,i) {return a[i]!=b[i]}).length;
+function hamming1(a, b) {
+  return a.split('').filter(function(v, i) { return a[i] != b[i] }).length;
 }
 
 // console.log(hamming1("Hello World","Hello World"));
@@ -687,17 +687,17 @@ function hamming1(a,b) {
 //problem = 47
 // Is n divisible by x and y?
 function isDivisible(n, x, y) {
-  return !(n%x||n%y)
+  return !(n % x || n % y)
   // return n%x===0 && n%y===0 ? true : false; 
 }
 // console.log(isDivisible(100,5,4))
 
 //problem = 48
 // Grasshopper - Terminal Game #1
-function Hero (name) {
+function Hero(name) {
 
-  return {name: name, experience: 0, health: 100, position: `00`, damage: 5}
-  
+  return { name: name, experience: 0, health: 100, position: `00`, damage: 5 }
+
   // this.name = name || "Hero",
   // this.position = "00"
   // this.health = 100
@@ -708,14 +708,14 @@ function Hero (name) {
 //problem = 49
 // Century From Year
 function century(year) {
-  return Math.floor(year/100);
+  return Math.floor(year / 100);
 }
 // console.log(century(2000))
 
 // problem = 50
 // Square(n) Sum
-function squareSum(numbers){
-  return numbers.reduce((sum,num) => sum + (num * num), 0);
+function squareSum(numbers) {
+  return numbers.reduce((sum, num) => sum + (num * num), 0);
   // let sum = 0;
   // for(let i=0; i<numbers.length;i++){
   //   sum+=Math.pow(numbers[i],2);
@@ -726,7 +726,8 @@ function squareSum(numbers){
 
 //problem = 51
 // Fun with ES6 Classes #1 - People, people, people
-class Person {  constructor(firstName='John',lastName='Doe',age=0,gender='Male'){
+class Person {
+  constructor(firstName = 'John', lastName = 'Doe', age = 0, gender = 'Male') {
     Object.assign(this, { firstName, lastName, age, gender });
     // this.firstName = firstName,
     // this.lastName = lastName,
@@ -734,11 +735,11 @@ class Person {  constructor(firstName='John',lastName='Doe',age=0,gender='Male')
     // this.gender = gender
   }
 
-  sayFullName(){
+  sayFullName() {
     return this.firstName + ' ' + this.lastName;
   }
 
-  static greetExtraTerrestrials(raceName){
+  static greetExtraTerrestrials(raceName) {
     return `Welcome to Planet Earth ${raceName}`
   }
 }
@@ -748,12 +749,12 @@ class Person {  constructor(firstName='John',lastName='Doe',age=0,gender='Male')
 let a1 = ["arp", "live", "strong"]
 let a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
 
-function inArray(array1,array2){
+function inArray(array1, array2) {
   let r = [];
 
-  for(let i = 0; i < array1.length; i++){
-    for(let j = 0; j < array2.length; j++){
-      if(array2[j].includes(array1[i]) === true){
+  for (let i = 0; i < array1.length; i++) {
+    for (let j = 0; j < array2.length; j++) {
+      if (array2[j].includes(array1[i]) === true) {
         r.push(array1[i])
       }
     }
@@ -764,4 +765,9 @@ function inArray(array1,array2){
   return (r.sort())
 }
 
-console.log(inArray(a1,a2))
+function inArray1(a1, a2) {
+  var str = a2.join(' ');
+  return a1.filter(s => str.indexOf(s) !== -1).sort();
+}
+
+console.log(inArray(a1, a2))

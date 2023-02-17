@@ -742,3 +742,26 @@ class Person {  constructor(firstName='John',lastName='Doe',age=0,gender='Male')
     return `Welcome to Planet Earth ${raceName}`
   }
 }
+
+//problem = 52
+// Which are in?
+let a1 = ["arp", "live", "strong"]
+let a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+function inArray(array1,array2){
+  let r = [];
+
+  for(let i = 0; i < array1.length; i++){
+    for(let j = 0; j < array2.length; j++){
+      if(array2[j].includes(array1[i]) === true){
+        r.push(array1[i])
+      }
+    }
+  }
+
+  r = [...new Set(r)];
+  console.log(r)
+  return (r.sort())
+}
+
+console.log(inArray(a1,a2))

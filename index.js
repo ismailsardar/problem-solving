@@ -806,4 +806,8 @@ function uniTotal (string) {
   }
   return sum;
 }
+
+function uniTotal1 (string) {
+ return a.split('').reduce((s,c) => s+c.charCodeAt(),0)
+}
 console.log(uniTotal('aaa'))

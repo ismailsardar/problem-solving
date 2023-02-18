@@ -795,4 +795,15 @@ function sumIntervals(intervals) {
   return newArr.length;
 }
 let intervals = [[1,4],[7, 10],[3, 5]]
-console.log(sumIntervals(intervals))
+// console.log(sumIntervals(intervals))
+
+//problem = 54
+// ASCII Total
+function uniTotal (string) {
+ let sum = 0;
+  for(let i = 0; i < string.length; i++){
+    sum += string.charCodeAt(i)
+  }
+  return sum;
+}
+console.log(uniTotal('aaa'))

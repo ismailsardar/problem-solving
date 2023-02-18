@@ -770,4 +770,25 @@ function inArray1(a1, a2) {
   return a1.filter(s => str.indexOf(s) !== -1).sort();
 }
 
-console.log(inArray(a1, a2))
+// console.log(inArray(a1, a2))
+
+//problem = 53
+// Sum of Intervals
+// console.log([1,2,3,4].length-1)
+function sumIntervals(intervals) {
+  let newArr = [];
+  for(let j = 0; j < intervals.length; j++){
+    for(let i = intervals[j][0]; i < intervals[j][1]; i++){
+      newArr.push(i);
+    }
+  }
+  // intervals.forEach(e => {
+  //   for(let i = e[0]; i < e[1]; i++){
+  //     newArr.push(i);
+  //   }
+  // });
+  newArr = [...new Set(newArr)];
+  return newArr.length;
+}
+let intervals = [[1,4],[7, 10],[3, 5]]
+console.log(sumIntervals(intervals))

@@ -777,17 +777,21 @@ function inArray1(a1, a2) {
 // console.log([1,2,3,4].length-1)
 function sumIntervals(intervals) {
   let newArr = [];
-  for(let j = 0; j < intervals.length; j++){
-    for(let i = intervals[j][0]; i < intervals[j][1]; i++){
-      newArr.push(i);
-    }
-  }
-  // intervals.forEach(e => {
-  //   for(let i = e[0]; i < e[1]; i++){
+  
+  // for(let j = 0; j < intervals.length; j++){
+  //   for(let i = intervals[j][0]; i < intervals[j][1]; i++){
   //     newArr.push(i);
   //   }
-  // });
+  // }
+  
+  intervals.forEach(e => {
+    for(let i = e[0]; i < e[1]; i++){
+      newArr.push(i);
+    }
+  });
+  
   newArr = [...new Set(newArr)];
+  console.log(newArr)
   return newArr.length;
 }
 let intervals = [[1,4],[7, 10],[3, 5]]

@@ -814,5 +814,9 @@ function uniTotal1 (string) {
 
 //problem = 55
 // Find out whether the shape is a cube
-let cubeChecker = (volume, side)=> volume/side**2 == side && side > 0
-console.log(cubeChecker(125,-5))
+let cubeChecker = (volume, side)=> volume/side**2 == side && side > 0;
+
+var cubeChecker1 = function(volume, side){
+  return Math.pow(side, 3) === volume && side > 0;
+};
+console.log(cubeChecker1(125,-5))

@@ -810,4 +810,9 @@ function uniTotal (string) {
 function uniTotal1 (string) {
  return a.split('').reduce((s,c) => s+c.charCodeAt(),0)
 }
-console.log(uniTotal('aaa'))
+// console.log(uniTotal('aaa'))
+
+//problem = 55
+// Find out whether the shape is a cube
+let cubeChecker = (volume, side)=> volume/side**2 == side && side > 0
+console.log(cubeChecker(125,-5))

@@ -834,4 +834,8 @@ function strCount(str, letter){
   return count;
 }
 
-console.log(strCount('Hello','l'))
+function strCount1(str, letter){  
+  return str.split(letter)
+}
+
+console.log(strCount1('Helllo','l'))

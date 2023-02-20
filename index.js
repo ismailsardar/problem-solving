@@ -845,4 +845,8 @@ console.clear()
 function xor(a, b) {
   return a===b ? false : true;
 }
-console.log(xor(true, false))
+
+function xor1(a, b) {
+  return a != b;
+}
+console.log(xor1(true, true))

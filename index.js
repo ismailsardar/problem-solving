@@ -819,8 +819,19 @@ let cubeChecker = (volume, side)=> volume/side**2 == side && side > 0;
 var cubeChecker1 = function(volume, side){
   return Math.pow(side, 3) === volume && side > 0;
 };
-// console.log(cubeChecker1(125,-5))
+console.log(cubeChecker1(125,-5))
 
 //problem = 56
 // Function 1 - hello world
 let greet = () => "hello world!";
+
+
+//problem = 57
+// All Star Code Challenge #18
+function strCount(str, letter){  
+  let count = 0;
+  str.split('').forEach(e=> e === letter ? count+=1 : count);
+  return count;
+}
+
+console.log(strCount('Hello','l'))

@@ -837,5 +837,12 @@ function strCount(str, letter){
 function strCount1(str, letter){  
   return str.split(letter)
 }
-
 console.log(strCount1('Helllo','l'))
+console.clear()
+
+//problem = 58
+// Exclusive "or" (xor) Logical Operator
+function xor(a, b) {
+  return a===b ? false : true;
+}
+console.log(xor(true, false))

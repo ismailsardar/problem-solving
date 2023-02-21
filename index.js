@@ -864,3 +864,6 @@ function SubtractSum2(n){
 
   return fruit[n]
 }
+
+const SubtractSum3 = () => "apple";
+console.log(SubtractSum2(335))

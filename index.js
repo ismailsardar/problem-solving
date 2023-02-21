@@ -867,3 +867,17 @@ function SubtractSum2(n){
 
 const SubtractSum3 = () => "apple";
 console.log(SubtractSum2(335))
+
+console.clear()
+//problem = 60
+// Cat years, Dog years
+let humanYearsCatYearsDogYears = function(humanYears) {
+ if(humanYears == 1) return[1,15,15];
+ if(humanYears == 2) return[2,24,24]; 
+  
+  return [humanYears,
+          24 + (humanYears-2)*4,
+          24 + (humanYears-2)*5
+         ];
+}
+console.log(humanYearsCatYearsDogYears(10))

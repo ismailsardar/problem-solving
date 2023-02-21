@@ -880,4 +880,11 @@ let humanYearsCatYearsDogYears = function(humanYears) {
           24 + (humanYears-2)*5
          ];
 }
-console.log(humanYearsCatYearsDogYears(10))
+
+const humanYearsCatYearsDogYears1 = humanYears => [
+  humanYears,
+  ( humanYears - 1 ? 16 : 11 ) + 4 * humanYears,
+  ( humanYears - 1 ? 14 : 10 ) + 5 * humanYears,
+];
+
+console.log(humanYearsCatYearsDogYears1(10))

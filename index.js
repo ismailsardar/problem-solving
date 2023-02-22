@@ -899,4 +899,8 @@ let result = 1;
   }
   return result;
 }
-console.log(numberToPower(10,2))
+
+let vm = require('vm');
+let numberToPower1 =(Q,S)=> vm.runInThisContext(Q+` *\* `+S)
+
+console.log(numberToPower1(10,2))

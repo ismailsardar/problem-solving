@@ -868,7 +868,7 @@ function SubtractSum2(n){
 const SubtractSum3 = () => "apple";
 console.log(SubtractSum2(335))
 
-console.clear()
+// console.clear()
 //problem = 60
 // Cat years, Dog years
 let humanYearsCatYearsDogYears = function(humanYears) {
@@ -888,3 +888,15 @@ const humanYearsCatYearsDogYears1 = humanYears => [
 ];
 
 console.log(humanYearsCatYearsDogYears1(10))
+
+console.clear()
+//problem = 61
+//Power
+function numberToPower(number, power){
+let result = 1;
+  for(let i=0; i<power; i++){
+    result *= number;
+  }
+  return result;
+}
+console.log(numberToPower(10,2))

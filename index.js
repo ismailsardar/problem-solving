@@ -922,3 +922,10 @@ console.log(chromosomeCheck1('XY'))
 function find(arr,ele){
  return arr.includes(ele)?array.indexOf(ele):'Not found';
 }
+
+const find1 = (a, e) => {
+  const i = a.indexOf(e);
+  return i < 0 ? 'Not found' : i;
+}
+
+console.log(find1())

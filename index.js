@@ -915,5 +915,10 @@ function chromosomeCheck(sperm) {
 const chromosomeCheck1 = sperm =>
   `Congratulations! You're going to have a ${sperm === `XY` ? `son` : `daughter`}.`;
 
-
 console.log(chromosomeCheck1('XY'))
+
+//problem = 64
+// Be Concise IV - Index of an element in an array
+function find(arr,ele){
+ return arr.includes(ele)?array.indexOf(ele):'Not found';
+}

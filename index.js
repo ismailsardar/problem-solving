@@ -889,7 +889,7 @@ const humanYearsCatYearsDogYears1 = humanYears => [
 
 console.log(humanYearsCatYearsDogYears1(10))
 
-console.clear()
+// console.clear()
 //problem = 61
 //Power
 function numberToPower(number, power){
@@ -904,3 +904,11 @@ let vm = require('vm');
 let numberToPower1 =(Q,S)=> vm.runInThisContext(Q+` *\* `+S)
 
 console.log(numberToPower1(10,2))
+
+console.clear()
+//problem = 62
+// Determine offspring sex based on genes XX and XY chromosomes
+function chromosomeCheck(sperm) {
+  return sperm === 'XY' ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter.";
+}
+console.log(chromosomeCheck('XY'))

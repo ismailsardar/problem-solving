@@ -931,13 +931,16 @@ const find1 = (a, e) => {
 // console.log(find1())
 
 console.clear();
+
 //problem = 65
 // Grasshopper - Summation
-var summation = function (num) {
+let summation = function (num) {
   let sum = 0;
   for(let i = 1; i <= num; i++){
     sum+=i;
   }
   return sum;
 }
-console.log(summation(8));
+const summation1 = num => (1 + num) * num / 2;
+
+console.log(summation1(8));

@@ -928,4 +928,16 @@ const find1 = (a, e) => {
   return i < 0 ? 'Not found' : i;
 }
 
-console.log(find1())
+// console.log(find1())
+
+console.clear();
+//problem = 65
+// Grasshopper - Summation
+var summation = function (num) {
+  let sum = 0;
+  for(let i = 1; i <= num; i++){
+    sum+=i;
+  }
+  return sum;
+}
+console.log(summation(8));

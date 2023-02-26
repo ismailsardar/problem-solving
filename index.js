@@ -951,4 +951,8 @@ console.clear()
 function saleHotdogs(n){
   return n<5 ? 100*n : (n >= 5 && n < 10) ? 95*n : 90*n;
 }
-console.log(saleHotdogs(2))
+
+function saleHotdogs1(n){
+  return n*(n<5?100:n<10?95:90);
+}
+console.log(saleHotdogs1(2))

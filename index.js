@@ -930,7 +930,7 @@ const find1 = (a, e) => {
 
 // console.log(find1())
 
-console.clear();
+// console.clear();
 
 //problem = 65
 // Grasshopper - Summation
@@ -944,3 +944,11 @@ let summation = function (num) {
 const summation1 = num => (1 + num) * num / 2;
 
 console.log(summation1(8));
+
+console.clear()
+//problem = 66
+// Training JS #7: if..else and ternary operator
+function saleHotdogs(n){
+  return n<5 ? 100*n : (n >= 5 && n < 10) ? 95*n : 90*n;
+}
+console.log(saleHotdogs(2))

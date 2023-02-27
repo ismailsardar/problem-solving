@@ -945,7 +945,7 @@ const summation1 = num => (1 + num) * num / 2;
 
 console.log(summation1(8));
 
-console.clear()
+// console.clear()
 //problem = 66
 // Training JS #7: if..else and ternary operator
 function saleHotdogs(n){
@@ -956,3 +956,13 @@ function saleHotdogs1(n){
   return n*(n<5?100:n<10?95:90);
 }
 console.log(saleHotdogs1(2))
+
+console.clear()
+//problem = 67
+// Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.split('').filter((ele)=>{
+    return ele !== '!'
+  }).join('');
+}
+console.log(removeExclamationMarks("WsnBSAcFwS!OdNueEgVgZ NwCRphBHCZ!UNGelgrlHx"))

@@ -977,6 +977,15 @@ console.clear();
 // Pythagorean Triple
 function isPythagoreanTriple(int) {
   let [a,b,c] = int.sort((a,b)=> a-b);
+  console.log(a)
+  console.log(b)
+  console.log(c)
   return a**2 + b**2 == c**2
 }
-console.log(isPythagoreanTriple([3,4,5]))
+
+function isPythagoreanTriple1(integers) {
+  let massiv = integers.sort((a, b) => a - b)
+  return (massiv[0] ** 2 + massiv[1] ** 2 == massiv[2] ** 2)
+}
+
+console.log(isPythagoreanTriple1([3,2,5]));

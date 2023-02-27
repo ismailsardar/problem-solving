@@ -957,7 +957,7 @@ function saleHotdogs1(n){
 }
 console.log(saleHotdogs1(2))
 
-console.clear()
+// console.clear()
 //problem = 67
 // Remove exclamation marks
 function removeExclamationMarks(s) {
@@ -970,4 +970,13 @@ function removeExclamationMarks1(s) {
   return s.replace(/!/gi, '');
 }
 
-console.log(removeExclamationMarks1("WsnBSAcFwS!OdNueEgVgZ NwCRphBHCZ!UNGelgrlHx"))
+console.log(removeExclamationMarks1("WsnBSAcFwS!OdNueEgVgZ NwCRphBHCZ!UNGelgrlHx"));
+
+console.clear();
+// problem = 68
+// Pythagorean Triple
+function isPythagoreanTriple(int) {
+  let [a,b,c] = int.sort((a,b)=> a-b);
+  return a**2 + b**2 == c**2
+}
+console.log(isPythagoreanTriple([3,4,5]))

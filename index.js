@@ -965,4 +965,9 @@ function removeExclamationMarks(s) {
     return ele !== '!'
   }).join('');
 }
-console.log(removeExclamationMarks("WsnBSAcFwS!OdNueEgVgZ NwCRphBHCZ!UNGelgrlHx"))
+
+function removeExclamationMarks1(s) {
+  return s.replace(/!/gi, '');
+}
+
+console.log(removeExclamationMarks1("WsnBSAcFwS!OdNueEgVgZ NwCRphBHCZ!UNGelgrlHx"))

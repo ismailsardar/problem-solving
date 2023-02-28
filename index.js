@@ -997,4 +997,7 @@ function getStatus(isBusy) {
   let msg = (isBusy ? "busy" : "available");
   return {status: msg}
 }
-console.log(getStatus(true))
+
+let getStatus1 = isBusy => ({ status: isBusy ? 'busy' : 'available' });
+
+console.log(getStatus1(true))

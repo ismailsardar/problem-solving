@@ -972,7 +972,7 @@ function removeExclamationMarks1(s) {
 
 console.log(removeExclamationMarks1("WsnBSAcFwS!OdNueEgVgZ NwCRphBHCZ!UNGelgrlHx"));
 
-console.clear();
+// console.clear();
 // problem = 68
 // Pythagorean Triple
 function isPythagoreanTriple(int) {
@@ -989,3 +989,12 @@ function isPythagoreanTriple1(integers) {
 }
 
 console.log(isPythagoreanTriple1([3,2,5]));
+
+console.clear()
+//problem = 69
+// Unexpected parsing
+function getStatus(isBusy) {
+  let msg = (isBusy ? "busy" : "available");
+  return {status: msg}
+}
+console.log(getStatus(true))

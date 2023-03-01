@@ -1013,4 +1013,9 @@ function nbDig(n, d) {
   console.log(result.split(d))
   return result.split(d).length - 1;
 }
-console.log(nbDig(10,1))
+
+function nbDig1(n, d) {
+  if (n === -1) return 0
+  return (String(n**2).split(d).length - 1) + nbDig1(n - 1, d)
+}
+console.log(nbDig1(10,1))

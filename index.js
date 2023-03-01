@@ -1025,4 +1025,6 @@ console.clear()
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.filter((ele)=> ele===true).length;
 }
-console.log(countSheeps([true,true,true,false,true,false]))
+
+let countSheeps1 = x => x.filter( s => s ).length;
+console.log(countSheeps1([true,true,true,false,true,false]))

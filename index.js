@@ -990,7 +990,7 @@ function isPythagoreanTriple1(integers) {
 
 console.log(isPythagoreanTriple1([3,2,5]));
 
-console.clear()
+// console.clear()
 //problem = 69
 // Unexpected parsing
 function getStatus(isBusy) {
@@ -1001,3 +1001,16 @@ function getStatus(isBusy) {
 let getStatus1 = isBusy => ({ status: isBusy ? 'busy' : 'available' });
 
 console.log(getStatus1(true))
+
+console.clear()
+//problem = 70
+function nbDig(n, d) {
+  let result = '';
+  for(let i = 0; i <= n; i++){
+    result += i**2;
+  }
+  console.log(result)
+  console.log(result.split(d))
+  return result.split(d).length - 1;
+}
+console.log(nbDig(10,1))

@@ -1002,7 +1002,7 @@ let getStatus1 = isBusy => ({ status: isBusy ? 'busy' : 'available' });
 
 console.log(getStatus1(true))
 
-console.clear()
+// console.clear()
 //problem = 70
 function nbDig(n, d) {
   let result = '';
@@ -1019,3 +1019,10 @@ function nbDig1(n, d) {
   return (String(n**2).split(d).length - 1) + nbDig1(n - 1, d)
 }
 console.log(nbDig1(10,1))
+
+console.clear()
+//problem = 71
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter((ele)=> ele===true).length;
+}
+console.log(countSheeps([true,true,true,false,true,false]))

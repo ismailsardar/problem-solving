@@ -1034,4 +1034,7 @@ console.clear()
 let countSquares = function(cuts){
  return 'Hello Word'
 }
-console.log(countSquares())
+const countSquares1 = (cuts)=>{
+  return cuts == 0 ? 1 : cuts == 1 ? 8 : (cuts+1)**3 - (cuts-1)**3;
+}
+console.log(countSquares1(5))

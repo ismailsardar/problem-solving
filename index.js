@@ -1037,4 +1037,14 @@ let countSquares = function(cuts){
 const countSquares1 = (cuts)=>{
   return cuts == 0 ? 1 : cuts == 1 ? 8 : (cuts+1)**3 - (cuts-1)**3;
 }
-console.log(countSquares1(5))
+let countSquares3 = function(cuts){
+  if (!cuts) {
+    return 1;
+  }
+
+  const totalCubes = Math.pow(cuts + 1, 3);
+  const innerCubes = Math.pow(cuts - 1, 3);
+  
+  return totalCubes - innerCubes;
+}
+console.log(countSquares3(5))

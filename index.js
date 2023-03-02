@@ -1020,7 +1020,7 @@ function nbDig1(n, d) {
 }
 console.log(nbDig1(10,1))
 
-console.clear()
+// console.clear()
 //problem = 71
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.filter((ele)=> ele===true).length;
@@ -1028,3 +1028,10 @@ function countSheeps(arrayOfSheep) {
 
 let countSheeps1 = x => x.filter( s => s ).length;
 console.log(countSheeps1([true,true,true,false,true,false]))
+
+console.clear()
+//problem = 72
+let countSquares = function(cuts){
+ return 'Hello Word'
+}
+console.log(countSquares())

@@ -1049,13 +1049,14 @@ let countSquares3 = function(cuts){
 }
 console.log(countSquares3(5))
 
-console.clear()
+// console.clear()
 //problem = 73
 function helloWorld(){
   let str = "Hello World!";
   return console.log(str);
 }
 console.log(helloWorld())
+console.clear()
 
 /*
                                            /

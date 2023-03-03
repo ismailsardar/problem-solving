@@ -1029,7 +1029,7 @@ function countSheeps(arrayOfSheep) {
 let countSheeps1 = x => x.filter( s => s ).length;
 console.log(countSheeps1([true,true,true,false,true,false]))
 
-console.clear()
+// console.clear()
 //problem = 72
 let countSquares = function(cuts){
  return 'Hello Word'
@@ -1048,3 +1048,11 @@ let countSquares3 = function(cuts){
   return totalCubes - innerCubes;
 }
 console.log(countSquares3(5))
+
+console.clear()
+//problem = 73
+function helloWorld(){
+  let str = "Hello World!";
+  return console.log(str);
+}
+console.log(helloWorld())

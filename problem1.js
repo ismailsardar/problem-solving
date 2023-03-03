@@ -1,3 +1,8 @@
 //problem = 73
 let solution =(str, ending)=> str.endsWith(ending)
-console.log(solution('Hello','lo'))
+
+function solution1(str, ending){
+  console.log(-ending.length)
+  return str.substr(-ending.length) == ending;
+}
+console.log(solution1('Hello','lo'))

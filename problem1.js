@@ -21,5 +21,8 @@ function vowelOne1(s){
   return s.replace(/[^aeiou]/gi, '0').replace(/[^\d]/g, '1');
 }
 
-console.log(vowelOne1('vowelOne'))
+function vowelOne2(s){
+  return s.split('').map(x => ('aeiouAEIOU'.includes(x)) ? 1 : 0).join('');
+}
+console.log(vowelOne2('vowelOne'))
 console.log(12)

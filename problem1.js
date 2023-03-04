@@ -17,5 +17,9 @@ function vowelOne(s){
   return str;
 }
 
-console.log(vowelOne('vowelOne'))
+function vowelOne1(s){
+  return s.replace(/[^aeiou]/gi, '0').replace(/[^\d]/g, '1');
+}
+
+console.log(vowelOne1('vowelOne'))
 console.log(12)

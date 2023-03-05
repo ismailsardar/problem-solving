@@ -32,4 +32,14 @@ console.clear();
 function none(arr, fun){
  return !arr.some(ele => fun(ele));
 }
+
+function none1(arr, fun){
+  for (var i = 0; i < arr.length; i++) {
+    if (fun(arr[i]) == true) {
+      return false;
+    }
+  }
+  
+  return true;
+}
 console.log(none())

@@ -26,3 +26,10 @@ function vowelOne2(s){
 }
 console.log(vowelOne2('vowelOne'))
 console.log(12)
+
+console.clear();
+//problem = 75
+function none(arr, fun){
+ return !arr.some(ele => fun(ele));
+}
+console.log(none())

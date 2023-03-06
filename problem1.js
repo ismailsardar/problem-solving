@@ -27,7 +27,7 @@ function vowelOne2(s){
 console.log(vowelOne2('vowelOne'))
 console.log(12)
 
-console.clear();
+// console.clear();
 //problem = 75
 function none(arr, fun){
  return !arr.some(ele => fun(ele));
@@ -43,3 +43,12 @@ function none1(arr, fun){
   return true;
 }
 console.log(none())
+
+console.clear();
+//problem = 77
+// Classy Extentions
+class Cat extends Animal {
+  speak(){
+    return this.name + ' meows.'
+  }
+}

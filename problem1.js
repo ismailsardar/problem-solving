@@ -68,6 +68,10 @@ class Cat1 extends Animal {
 console.clear()
 //problem = 78
 function checkDigit(number, index1, index2, digit) {
+  console.log(Math.min(index1, index2))
+  console.log(Math.max(index1, index2))
+  // console.log()
+  console.log(String(number).slice(Math.min(index1, index2), Math.max(index1, index2) + 1))
   return String(number).slice(Math.min(index1, index2), Math.max(index1, index2) + 1).includes(digit);
 };
-console.log(checkDigit(12345678912345, 1, 0, 1))
+console.log(checkDigit(12345678912345, 1, 0, 1));

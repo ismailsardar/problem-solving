@@ -42,11 +42,14 @@ function none1(arr, fun) {
 
   return true;
 }
-console.log(none())
+console.log(none([]))
 
-console.clear();
+// console.clear();
 //problem = 77
 // Classy Extentions
+class Animal{
+  
+}
 class Cat extends Animal {
   speak() {
     return this.name + ' meows.'
@@ -61,3 +64,10 @@ class Cat1 extends Animal {
     return `${this.name} meows.`
   }
 }
+
+console.clear()
+//problem = 78
+function checkDigit(number, index1, index2, digit) {
+  return String(number).slice(Math.min(index1, index2), Math.max(index1, index2) + 1).includes(digit);
+};
+console.log(checkDigit(12345678912345, 1, 0, 1))

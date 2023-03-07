@@ -84,4 +84,8 @@ function keepOrder(ary, val) {
   return newArry.indexOf(val);
 }
 
-console.log(keepOrder([1, 2, 3, 4, 7], 0));
+function keepOrder1(ary, val) {
+  return ary.filter(a => a < val).length;
+}
+
+console.log(keepOrder1([1, 2, 3, 4, 7], 0));

@@ -65,7 +65,7 @@ class Cat1 extends Animal {
   }
 }
 
-console.clear()
+// console.clear()
 //problem = 78
 function checkDigit(number, index1, index2, digit) {
   console.log(Math.min(index1, index2))
@@ -75,3 +75,13 @@ function checkDigit(number, index1, index2, digit) {
   return String(number).slice(Math.min(index1, index2), Math.max(index1, index2) + 1).includes(digit);
 };
 console.log(checkDigit(12345678912345, 1, 0, 1));
+
+console.clear()
+//problem = 79
+function keepOrder(ary, val) {
+  let newArry = [...ary,val];
+  newArry.sort((a, b)=> a-b);
+  return newArry.indexOf(val);
+}
+
+console.log(keepOrder([1, 2, 3, 4, 7], 0));

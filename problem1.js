@@ -100,6 +100,15 @@ let max = function(list) {
   console.log(list)
   return Math.max(...list);
 }
+//another way
+var min1 = function(list) {
+  return Math.min.apply(null, list);
+}
+
+var max1 = function(list) {
+  return Math.max.apply(null, list);
+}
+
 console.log(min([
   -52, 56, 30,
   29, -54, 0,

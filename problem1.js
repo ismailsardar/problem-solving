@@ -47,8 +47,8 @@ console.log(none([]))
 // console.clear();
 //problem = 77
 // Classy Extentions
-class Animal{
-  
+class Animal {
+
 }
 class Cat extends Animal {
   speak() {
@@ -76,16 +76,32 @@ function checkDigit(number, index1, index2, digit) {
 };
 console.log(checkDigit(12345678912345, 1, 0, 1));
 
-console.clear()
+// console.clear()
 //problem = 79
 function keepOrder(ary, val) {
-  let newArry = [...ary,val];
-  newArry.sort((a, b)=> a-b);
+  let newArry = [...ary, val];
+  newArry.sort((a, b) => a - b);
   return newArry.indexOf(val);
 }
 
 function keepOrder1(ary, val) {
   return ary.filter(a => a < val).length;
 }
-
 console.log(keepOrder1([1, 2, 3, 4, 7], 0));
+
+console.clear();
+//problem = 80
+let min = function(list) {
+  console.log(list)
+  return Math.min(...list)
+}
+
+let max = function(list) {
+  console.log(list)
+  return Math.max(...list);
+}
+console.log(min([
+  -52, 56, 30,
+  29, -54, 0,
+  -110
+]))

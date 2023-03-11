@@ -115,7 +115,7 @@ console.log(min([
   -110
 ]));
 
-console.clear();
+// console.clear();
 //problem = 81
 // Create a class Ball. Ball objects should accept one argument for "ball type" when instantiated.
 // If no arguments are given, ball objects should instantiate with a "ball type" of "regular."
@@ -130,3 +130,11 @@ class Ball1 {
     this.ballType = ballType;
   }
 }
+
+console.clear()
+//problem = 82
+
+function computerToPhone(numbers){
+ return numbers.replace(/\d/g,e => '0789456123'[e]);
+}
+console.log(computerToPhone('94561'));

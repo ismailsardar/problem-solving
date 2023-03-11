@@ -89,7 +89,7 @@ function keepOrder1(ary, val) {
 }
 console.log(keepOrder1([1, 2, 3, 4, 7], 0));
 
-console.clear();
+// console.clear();
 //problem = 80
 let min = function(list) {
   console.log(list)
@@ -113,4 +113,14 @@ console.log(min([
   -52, 56, 30,
   29, -54, 0,
   -110
-]))
+]));
+
+console.clear();
+//problem = 81
+// Create a class Ball. Ball objects should accept one argument for "ball type" when instantiated.
+// If no arguments are given, ball objects should instantiate with a "ball type" of "regular."
+let Ball = function(ballType) {
+  
+};
+ball1 = new Ball();
+ball2 = new Ball("super");

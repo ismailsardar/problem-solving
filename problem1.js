@@ -124,3 +124,9 @@ let Ball = function(ballType) {
 };
 ball1 = new Ball();
 ball2 = new Ball("super");
+
+class Ball1 {
+  constructor(ballType = "regular") {
+    this.ballType = ballType;
+  }
+}

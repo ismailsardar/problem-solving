@@ -137,4 +137,14 @@ console.clear()
 function computerToPhone(numbers){
  return numbers.replace(/\d/g,e => '0789456123'[e]);
 }
+function computerToPhone1(numbers) {
+  var map = [
+    0,
+    7, 8, 9,
+    4, 5, 6,
+    1, 2, 3,
+  ]
+  
+  return numbers.replace(/\d/g, function(d) { return map[d] })
+}
 console.log(computerToPhone('94561'));

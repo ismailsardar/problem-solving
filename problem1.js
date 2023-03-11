@@ -147,4 +147,7 @@ function computerToPhone1(numbers) {
   
   return numbers.replace(/\d/g, function(d) { return map[d] })
 }
-console.log(computerToPhone('94561'));
+function computerToPhone2(numbers) {
+  return numbers.split('').map(function(d) {return "0789456123"[d]; }).join('');
+}
+console.log(computerToPhone2('94561'));

@@ -151,10 +151,17 @@ function computerToPhone2(numbers) {
 }
 console.log(computerToPhone2('94561'));
 
-console.clear()
+// console.clear()
 //problem = 83
 function ifChuckSaysSo() {
   return 1 === '1'
 }
 function ifChuckSaysSo1(){return !true;}
 console.log(ifChuckSaysSo())
+
+console.clear()
+//problem = 84
+function joinStrings(string1, string2){
+   return `${string1.toString()} ${string2.toString()}`;
+}
+console.log(joinStrings('string1',12));

@@ -131,11 +131,10 @@ class Ball1 {
   }
 }
 
-console.clear()
+// console.clear()
 //problem = 82
-
-function computerToPhone(numbers){
- return numbers.replace(/\d/g,e => '0789456123'[e]);
+function computerToPhone(numbers) {
+  return numbers.replace(/\d/g, e => '0789456123'[e]);
 }
 function computerToPhone1(numbers) {
   var map = [
@@ -144,10 +143,17 @@ function computerToPhone1(numbers) {
     4, 5, 6,
     1, 2, 3,
   ]
-  
+
   return numbers.replace(/\d/g, function(d) { return map[d] })
 }
 function computerToPhone2(numbers) {
-  return numbers.split('').map(function(d) {return "0789456123"[d]; }).join('');
+  return numbers.split('').map(function(d) { return "0789456123"[d]; }).join('');
 }
 console.log(computerToPhone2('94561'));
+
+console.clear()
+//problem = 84
+function ifChuckSaysSo() {
+  return 1 === '1'
+}
+

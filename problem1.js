@@ -156,12 +156,13 @@ console.log(computerToPhone2('94561'));
 function ifChuckSaysSo() {
   return 1 === '1'
 }
-function ifChuckSaysSo1(){return !true;}
+function ifChuckSaysSo1() { return !true; }
 console.log(ifChuckSaysSo())
 
 console.clear()
 //problem = 84
-function joinStrings(string1, string2){
-   return `${string1.toString()} ${string2.toString()}`;
+function joinStrings(string1, string2) {
+  return `${string1.toString()} ${string2.toString()}`;
 }
-console.log(joinStrings('string1',12));
+const joinStrings1 = (a, b) => `${a} ${b}`
+console.log(joinStrings('string1', 12));

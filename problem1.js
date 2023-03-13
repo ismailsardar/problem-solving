@@ -171,8 +171,9 @@ console.clear()
 //problem = 85
 // The fusc function -- Part 1
 function fusc(n) {
-  if(n<2) return n;
-  if(n%2) return fusc((n-1)/2)+fusc((n-1)/2+1);
-  return fusc(n/2);
+  if (n < 2) return n;
+  if (n % 2) return fusc((n - 1) / 2) + fusc((n - 1) / 2 + 1);
+  return fusc(n / 2);
 }
+const fusc1 = (n) => n < 2 ? n : fusc(parseInt(n / 2)) + (n % 2) * fusc(parseInt(n + 1) / 2);
 console.log(fusc(10))

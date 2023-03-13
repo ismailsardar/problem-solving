@@ -166,3 +166,13 @@ function joinStrings(string1, string2) {
 }
 const joinStrings1 = (a, b) => `${a} ${b}`
 console.log(joinStrings('string1', 12));
+
+console.clear()
+//problem = 85
+// The fusc function -- Part 1
+function fusc(n) {
+  if(n<2) return n;
+  if(n%2) return fusc((n-1)/2)+fusc((n-1)/2+1);
+  return fusc(n/2);
+}
+console.log(fusc(10))
